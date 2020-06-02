@@ -27,7 +27,7 @@ jobs:
         node-version: 12
         
       - name: Install Surge
-        run: npm install --gobally surge
+        run: npm install -g surge
       
       - name: Run Surge
         run: surge ./ demoFirstsurgeapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
